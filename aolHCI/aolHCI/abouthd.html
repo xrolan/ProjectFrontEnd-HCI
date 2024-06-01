@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/abouthd.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="home.html"><img src="./photo/HDE_logo-removebg-preview.png" alt=""></a>
+        </div>
+
+        <nav class="nav_link" id="navbar">
+            <ul>
+                <li><a href="artist.html">Artist</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="abouthd.html">AboutHD</a></li>
+                <li><a href="audition.html">Audition</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+
+    <div class="position">
+        <div class="row0">
+            <img src="./photo/winterceo.png" alt="">
+            <div class="inform">
+                <h1>Kim Min-Jeong(Winter) -22</h1>
+                <h1>Busan</h1>
+                <h1>01 - 01 - 2001</h1>
+            </div>
+        </div>
+        <div class="row1">
+            <img src="./photo/seulgipresident.png" alt="">
+            <div class="inform">
+                <h1>Kang Seul-gi - 29</h1>
+                <h1>Ansan</h1>
+                <h1>10 - 02 - 1994</h1>
+            </div>
+        </div>
+        <div class="row2">
+            <img src="./photo/karinadirectors.png" alt="">
+            <div class="inform">
+                <h1>Yoo Ji-Min (Karina) - 23</h1>
+                <h1>Ji-Dong</h1>
+                <h1>11 - 04 - 2000</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="positiont1">
+        <div class="row1">
+            <div class="inform">
+                <h1>Kim Min-Jeong (Winter) - 22</h1>
+                <h1>Busan</h1>
+                <h1>01 - 01 - 2001</h1>
+            </div>
+            <div class="inform">
+                <h1>Kang Seul-gi - 29</h1>
+                <h1>Ansan</h1>
+                <h1>10 - 02 - 1994</h1>
+            </div>
+            <div class="inform">
+                <h1>Yoo Ji-Min (Karina) - 23</h1>
+                <h1>Ji-Dong</h1>
+                <h1>11 - 04 - 2000</h1>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="founder">
+        <h1>FOUNDER</h1>
+        <div class="foundercontent">
+            <img src="./photo/hdfounder.png" alt="">
+            <h5>HD is innovating the music industry's business model under the mission, "We believe in music". HD strives to be the world's best entertainment lifestyle platform company based on music. "Content" that leads global trends and "fans" that are our customers are the two pillars of our values, and we are committed to satisfying our customers by continuously improving our service to the highest standards.</h5>
+        </div>
+        
+    </div>
+
+    <footer class="footer">
+        <div class="logo">
+            <img src="./photo/HDE_logo-removebg-preview.png" alt="">
+        </div>
+        
+        <p class="contactus">Contact us: hd@entertaiment.com</p>
+        <p class="hdinfo">HD Entertainment 68-69, Kost sandang rawa belong, Jakarta Barat, Indonesia TEL. 08218763576 Shibal Shekia
+            Copyright © 2016 HD Entertainment. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./JS/slide.js"></script>
+    <script src="./JS/hamburger.js"></script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+</html>
